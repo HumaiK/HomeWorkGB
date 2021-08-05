@@ -12,10 +12,10 @@ public class HomeWork5 {
         ageOver40(emplArr);
     }
 
-    public static void ageOver40(Employee[] staff){    // 5. загвозка с выводом информации
+    public static void ageOver40(Employee[] staff){    // 5. вывод информации
         System.out.println("Employees over 40: ");
         for (int i=0; i<staff.length; i++){
-            if (staff[i].age > 40) {
+            if (staff[i].getAge() > 40) {
                 staff[i].info();
             }
         }

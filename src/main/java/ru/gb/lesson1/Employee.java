@@ -1,15 +1,13 @@
 package ru.gb.lesson1;
 
-import javax.swing.text.Position;
-
 public class Employee {   // 1. класс с полями
 
-    String name;
-    String position;
-    String email;
-    int phoneNumber;
-    int salary;
-    int age;
+    private String name;
+    private String position;
+    private String email;
+    private int phoneNumber;
+    private int salary;
+    private int age;
 
     public Employee(String name, String position, String email, int phoneNumber, int salary, int age) {  //2. конструктор класса
         this.name = name;
@@ -19,6 +17,12 @@ public class Employee {   // 1. класс с полями
         this.salary = salary;
         this.age = age;
     }
+
+    public int getAge(){
+        return age;
+    }
+
+
 
     void info(){    // 3. метод, который выводит информацию об объекте
         System.out.println();
